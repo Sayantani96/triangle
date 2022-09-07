@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <link rel="stylesheet" href="triangle.css">
+    <script src="https://kit.fontawesome.com/305d9484fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="tri-header">
+        <div class="heading">Fun with Triangles</div>
+        <ul class="tri-navigation">
+            <li class="nav-links">
+                <a href="triangle.html">Is Triangle?</a>
+            </li>
+            <li class="nav-links">
+                <a href="index.html">Quiz</a>
+            </li>
+            <li class="nav-links">
+                <a href="hypotenuse.html">Hypotenuse</a>
+            </li>
+            <li class="nav-links">
+                <a href="Area.html">Area Of Triangle</a>
+            </li>
+        </ul>
+    </header>
+    <div class="content">
+        <h1 class="content-heading">
+            Quiz on triangles
+        </h1>
+       
+        <h2 class="content-sub-heading">
+            For each correct answer you will get 1 point
+        </h2>
+        <form class="quiz-form">
+            <div class="questions">
+                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                    <input value="45" type="radio" name="question1" id="quiz-option">45
+                
+                    <input value="90" type="radio" name="question1" id="quiz-option">90
+                
+                    <input value="60" type="radio" name="question1" id="quiz-option">60
+                
+            </div>
+            <div class="questions">
+                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
+                </p>
+                
+                    <input value="acute" type="radio" name="question2" id="quiz-option">acute
+                
+                    <input value="obtuse" type="radio" name="question2" id="quiz-option">obtuse
+                
+                    <input value="right" type="radio" name="question2" id="quiz-option">right-angled
+                
+            </div>
+            <div class="questions">
+                <p>A triangle can have</p>
+                
+                    <input value="one" type="radio" name="question3" id="quiz-option">one right angle
+                
+                    <input value="two" type="radio" name="question3" id="quiz-option">two right angles
+                
+            </div>
+            <div class="questions">
+                <p>Which of the following can form a right angled triangle?</p>
+                
+                    <input value="14,15,26" type="radio" name="question4" id="quiz-option">14,15,26
+                
+                    <input value="12,16,20" type="radio" name="question4" id="quiz-option">12,16,20
+                
+            </div>
+            <div class="questions">
+                <p>Which of the following triangles are always similar?</p>
+            
+                    <input value="Equilateral" type="radio" name="question5" id="quiz-option">Equilateral
+                
+                    <input value="Isosceles" type="radio" name="question5" id="quiz-option">Isosceles
+                
+            </div>
+            <div class="questions">
+                <p>If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?</p>
+                
+                    <input value="100" type="radio" name="question6" id="quiz-option">100
+                
+                    <input value="85" type="radio" name="question6" id="quiz-option">85
+                
+            </div>
+            <div class="questions">
+                <p>If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle?</p>
+                
+                    <input value="30" type="radio" name="question7" id="quiz-option">30
+                
+                    <input value="10" type="radio" name="question7" id="quiz-option">10
+                
+            </div>
+            <div class="questions">
+                <p>The perimeter of scalene triangle with sides a, b, c is</p>
+                
+                    <input value="a+b+c" type="radio" name="question8" id="quiz-option">a + b + c
+                
+                    <input value="2a" type="radio" name="question8" id="quiz-option">2a
+               
+                    <input value="None" type="radio" name="question8" id="quiz-option">None
+                
+            </div>
+            <div class="questions">
+                <p>A scalene triangle has ___ lines of symmetry</p>
+                
+                    <input value="two" type="radio" name="question9" id="quiz-option">two
+               
+                    <input value="No" type="radio" name="question9" id="quiz-option">No
+                
+                    <input value="15" type="radio" name="question9" id="quiz-option">15
+            
+            </div>
+            <div class="questions">
+                <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?</p>
+                    <input value="85" type="radio" name="question10" id="quiz-option">85°
+                
+                    <input value="65" type="radio" name="question10" id="quiz-option">65°
+                
+                    <input value="45" type="radio" name="question10" id="quiz-option">45°
+    
+                
+            </div>
+        </form>
+        <p>
+            <button id="quiz-submit">Submit</button>
+        </p>
+       <h3 id="marks"></h3>
+    </div>
+    <footer class="common-footer">
+        <div>&#169; | 2022 | adarshbalika</div>
+        <div class="footer-logos">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>
