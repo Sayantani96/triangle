@@ -6,7 +6,10 @@ var checkBtn=document.querySelector('#check');
 var display=document.querySelector('#display');
 
 checkBtn.addEventListener('click', function displayStatement(){
-    calculateArea(side1.value,side2.value,side3.value);
+    if(side1.value<0 || side2.value<0 || side3.value<0){
+        display.innerText="Enter valid side lengths"
+    }
+    else calculateArea(side1.value,side2.value,side3.value);
 })
 
 function calculateArea(a,b,c){

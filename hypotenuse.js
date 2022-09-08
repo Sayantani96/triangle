@@ -6,7 +6,9 @@ var checkBtn=document.querySelector('#check');
 var display=document.querySelector('#display');
 
 checkBtn.addEventListener('click', function displayStatement(){
-    var isTriangle=calculateHypotenuse(base.value,height.value);
+    if(base.value===''||height.value==='') display.innerText='Both the fields need to be filled';
+    else if(base.value<=0 || height.value<=0) display.innerText='Enter valid inputs';
+    else calculateHypotenuse(base.value,height.value);
 })
 
 function calculateHypotenuse(b,h){
