@@ -29,18 +29,6 @@ a{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer-logos{
-    display:flex;
-    /* justify-content: space-evenly; */
-    text-align:center;
-    
-}
-
- .common-footer{
-    text-align:center;
-    width:50%;
-
-}
 
 .content{
     text-align:center;
