@@ -9,12 +9,16 @@ checkBtn.addEventListener('click', function displayStatement(){
     if(angle1.value<0) angle1.value=180+angle1.value
     if(angle2.value<0) angle2.value=180+angle2.value
     if(angle3.value<0) angle3.value=180+angle3.value
-    if(angle1.value==='' || angle2.value==='' || angle3.value==='') display.innerText='All fields must be filled'
+     
     var isTriangle=checkIfTriangle(angle1.value,angle2.value,angle3.value);
-    if(isTriangle){
+
+    if(angle1.value==='' || angle2.value==='' || angle3.value===''){
+        display.innerText='All fields must be filled'
+    }
+    else if(isTriangle){
         display.innerText="Yay, the angles form a triangle!"
     }
-    if(!isTriangle){
+    else if(!isTriangle){
         display.innerText="Oh Oh! The angle doesn't form a triangle"
     }
 })
