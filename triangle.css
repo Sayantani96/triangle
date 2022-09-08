@@ -80,8 +80,8 @@ button{
     .tri-navigation{
         justify-content:none;
     }
-    header{
-        width:100%;
+    .tri-header{
+       flex-direction: column;
     }
     
 }
