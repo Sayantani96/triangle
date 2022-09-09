@@ -6,9 +6,9 @@ var checkBtn=document.querySelector('#check');
 var display=document.querySelector('#display');
 
 checkBtn.addEventListener('click', function displayStatement(){
-    if(angle1.value<0) angle1.value=180+angle1.value
-    if(angle2.value<0) angle2.value=180+angle2.value
-    if(angle3.value<0) angle3.value=180+angle3.value
+    if(angle1.value<0) angle1.value=180+Number(angle1.value)
+    if(angle2.value<0) angle2.value=180+Number(angle2.value)
+    if(angle3.value<0) angle3.value=180+Number(angle3.value)
      
     var isTriangle=checkIfTriangle(angle1.value,angle2.value,angle3.value);
 
