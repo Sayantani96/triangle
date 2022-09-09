@@ -51,6 +51,9 @@ input{
 input[type='radio']{
     width:5%;
 }
+input:focus-visible{
+    outline:blueviolet;
+}
 
 button{
     background-color: blueviolet;
