@@ -9,8 +9,8 @@ const correctAnswers=[
     "one",
     "12,16,20",
     "Equilateral",
-    "85",
-    "10",
+    "100",
+    "30",
     "a+b+c",
     "No",
     "45"
@@ -20,16 +20,13 @@ quizSubmit.addEventListener('click',calculateResult);
 
 function calculateResult(){
     let score=0;
-    let index=0;
     const FormResults= new FormData(getFormData);
     for(let entry of FormResults.entries()){
-        if(entry[1]===correctAnswers[index]){
-           score++;
+        for(let i=0;i<correctAnswers.length;i++){
+            if(entry[1]===correctAnswers[i]){
+                score++;
+             }
         }
-        else{
-            console.log("incorrect");
-        }
-        index++;
     }
     resultDisplay.innerText=`The score is ${score}`
 }
